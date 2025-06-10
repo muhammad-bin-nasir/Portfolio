@@ -9,8 +9,8 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "John Doe - Software Engineer",
-  description: "Personal portfolio of John Doe, showcasing projects and skills.",
+  title: "Muhammad - A Creative Mind",
+  description: "Personal portfolio of Muhammad Bin Nasir, showcasing projects and skills.",
 }
 
 export default function RootLayout({

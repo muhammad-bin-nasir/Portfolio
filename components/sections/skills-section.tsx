@@ -43,7 +43,11 @@ export default function SkillsSection() {
             <Card className="text-center p-4 transition-all duration-300 hover:shadow-lg hover:border-primary/50 hover:scale-105">
               <CardContent className="p-0 flex flex-col items-center justify-center">
                 <div className="relative w-12 h-12 sm:w-16 sm:h-16 mb-2 transition-transform duration-300 group-hover:scale-110">
-                  <Image src={skill.icon || "/placeholder.svg"} alt={skill.name} layout="fill" objectFit="contain" />
+                  {typeof skill.icon === "function" ? (
+                    <skill.icon className="w-full h-full text-primary" />
+                  ) : (
+                    <Image src={skill.icon || "/placeholder.svg"} alt={skill.name} layout="fill" objectFit="contain" />
+                  )}
                 </div>
                 <p className="text-xs sm:text-sm font-medium text-foreground/90">{skill.name}</p>
                 <div className="w-full bg-muted rounded-full h-1.5 sm:h-2 mt-2 overflow-hidden">

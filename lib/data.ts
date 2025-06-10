@@ -1,4 +1,23 @@
-import { Github, Linkedin, Twitter, Briefcase, Lightbulb, Code2, BarChart3, Users, Palette } from "lucide-react"
+import {
+  Github,
+  Linkedin,
+  Twitter,
+  Code2,
+  Users,
+  FileCode,
+  FileType,
+  Braces,
+  Layers,
+  Server,
+  Database,
+  GitBranch,
+  Container,
+  PenTool,
+  Cpu,
+  BookOpenCheck,
+  ClipboardList,
+  FileText,
+} from "lucide-react"
 
 export const personalInfo = {
   name: "Muhammad Bin Nasir",
@@ -12,70 +31,69 @@ export const personalInfo = {
     { name: "Twitter", url: "https://twitter.com/Muhammad", icon: Twitter },
   ],
   bio: "I am a third-year Computer Science student with a strong focus on statistical computing and data analysis. Through rigorous coursework in algorithms, machine learning, and advanced mathematics, I've developed a robust foundation for tackling complex data challenges. I have worked on projects such as implementing neural networks from scratch and developing predictive models for real-world datasets, demonstrating both technical proficiency and practical problem-solving abilities. With a strong passion for Data Science, I aim to pursue an MS degree to deepen my expertise in areas such as deep learning and big data analytics. My combination of academic excellence, hands-on project experience, and commitment to data-driven innovation positions me to make meaningful contributions to the industry.",
-  shortBio:
-    "Crafting digital experiences, one line of code at a time. Focused on AI driven solutions..",
+  shortBio: "Crafting digital experiences, one line of code at a time. Focused on AI driven solutions..",
 }
 
 export const projects = [
   {
     id: 1,
-  title: "Automated Quiz Generator",
-  description:
-    "A C++ application that dynamically generates quizzes from a question bank based on subject and difficulty. Supports student login, quiz attempts, and PDF export using hpdf.",
-  image: "/placeholder.svg?width=600&height=400",
-  tags: ["C++", "Data Structures", "hpdf", "File Handling"],
-  liveUrl: "#",
-  repoUrl: "#",
-  icon: 'BookOpenCheck',
+    title: "Automated Quiz Generator",
+    description:
+      "A C++ application that dynamically generates quizzes from a question bank based on subject and difficulty. Supports student login, quiz attempts, and PDF export using hpdf.",
+    image: "/project1.png",
+    tags: ["C++", "Data Structures", "hpdf", "File Handling"],
+    liveUrl: "#",
+    repoUrl: "#",
+    icon: BookOpenCheck,
   },
   {
     id: 2,
-  title: "Library Management System",
-  description:
-    "A web-based solution to manage books, track lending, and handle admin operations with login authentication. Developed using the LAMP stack and served via XAMPP.",
-  image: "/placeholder.svg?width=600&height=400",
-  tags: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "XAMPP"],
-  liveUrl: "#",
-  repoUrl: "#",
-  icon: Users,
+    title: "Library Management System",
+    description:
+      "A web-based solution to manage books, track lending, and handle admin operations with login authentication. Developed using the LAMP stack and served via XAMPP.",
+    image: "/project2.png",
+    tags: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "XAMPP"],
+    liveUrl: "#",
+    repoUrl: "#",
+    icon: Users,
   },
   {
     id: 3,
-  title: "Class Management CLI",
-  description:
-    "A Python command-line interface that manages student records, attendance, and grading using CSV files. Features a dual interface for admin and student roles.",
-  image: "/placeholder.svg?width=600&height=400",
-  tags: ["Python", "CLI", "CSV", "File Handling"],
-  liveUrl: "#",
-  repoUrl: "#",
-  icon: 'ClipboardList',
+    title: "Class Management CLI",
+    description:
+      "A Python command-line interface that manages student records, attendance, and grading using CSV files. Features a dual interface for admin and student roles.",
+    image: "/project3.png",
+    tags: ["Python", "CLI", "CSV", "File Handling"],
+    liveUrl: "#",
+    repoUrl: "#",
+    icon: ClipboardList,
   },
   {
     id: 5,
-  title: "AI Notes Summarizer (Desktop)",
-  description:
-    "An OCR-powered desktop application that extracts and summarizes text from typed and handwritten notes. Utilizes OpenCV for image processing and a custom AI model for summarization.",
-  image: "/placeholder.svg?width=600&height=400",
-  tags: ["Python", "OpenCV", "OCR", "AI", "NLP"],
-  liveUrl: "#",
-  repoUrl: "#",
-  icon: 'FileText',
+    title: "AI Notes Summarizer (Desktop)",
+    description:
+      "An OCR-powered desktop application that extracts and summarizes text from typed and handwritten notes. Utilizes OpenCV for image processing and a custom AI model for summarization.",
+    image: "/project4.png",
+    tags: ["Python", "OpenCV", "OCR", "AI", "NLP"],
+    liveUrl: "#",
+    repoUrl: "#",
+    icon: FileText,
   },
 ]
 
 export const skills = [
-  { name: "JavaScript", level: 95, icon: "/placeholder.svg?width=48&height=48" },
-  { name: "TypeScript", level: 90, icon: "/placeholder.svg?width=48&height=48" },
-  { name: "React", level: 95, icon: "/placeholder.svg?width=48&height=48" },
-  { name: "Next.js", level: 90, icon: "/placeholder.svg?width=48&height=48" },
-  { name: "Node.js", level: 85, icon: "/placeholder.svg?width=48&height=48" },
-  { name: "Python", level: 80, icon: "/placeholder.svg?width=48&height=48" },
-  { name: "Tailwind CSS", level: 95, icon: "/placeholder.svg?width=48&height=48" },
-  { name: "Kotlin and XML", level: 75, icon: "/placeholder.svg?width=48&height=48" },
-  { name: "SQL (MySQL)", level: 80, icon: "/placeholder.svg?width=48&height=48" },
-  { name: "NoSQL (MongoDB)", level: 70, icon: "/placeholder.svg?width=48&height=48" },
-  { name: "Git & GitHub", level: 90, icon: "/placeholder.svg?width=48&height=48" },
-  { name: "Docker", level: 75, icon: "/placeholder.svg?width=48&height=48" },
+  { name: "JavaScript", level: 95, icon: FileCode },
+  { name: "TypeScript", level: 90, icon: FileType },
+  { name: "React", level: 95, icon: Code2 },
+  { name: "Next.js", level: 90, icon: Layers },
+  { name: "Node.js", level: 85, icon: Server },
+  { name: "Python", level: 80, icon: Braces },
+  { name: "Tailwind CSS", level: 95, icon: PenTool },
+  { name: "Kotlin and XML", level: 75, icon: Cpu },
+  { name: "SQL (MySQL)", level: 80, icon: Database },
+  { name: "NoSQL (MongoDB)", level: 70, icon: Database },
+  { name: "Git & GitHub", level: 90, icon: GitBranch },
+  { name: "Docker", level: 75, icon: Container },
 ]
 
 export const experiences = [
@@ -116,4 +134,3 @@ export const experiences = [
     icon: Users,
   },
 ]
-

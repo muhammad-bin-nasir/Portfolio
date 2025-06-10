@@ -90,7 +90,7 @@ export default function HeroSection() {
             </Link>
           </Button>
           <Button asChild variant="outline" size="lg" className="group">
-            <a href="/resume.pdf" download="JohnDoe-Resume.pdf">
+            <a href="/CV.pdf" download="CV.pdf">
               {" "}
               {/* Replace with actual resume path */}
               Download CV <Download className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />

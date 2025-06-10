@@ -18,7 +18,7 @@ export default function AboutSection() {
           className="relative w-full max-w-md mx-auto aspect-square"
         >
           <Image
-            src="/placeholder.svg?width=500&height=500"
+            src="/New.jpg"
             alt={personalInfo.name}
             layout="fill"
             objectFit="cover"
